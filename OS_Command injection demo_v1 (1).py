@@ -27,7 +27,7 @@ def test_command_injection(file_path):
         print(e.output.decode())
 
 # File_path to your file
-file_path = "C:\\Users\Student\Downloads\lib2def.py"
+file_path = "C:\\\\\lib2def.py"
 test_command_injection(file_path)
 
 
